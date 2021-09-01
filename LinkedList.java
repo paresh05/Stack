@@ -56,6 +56,14 @@ public class LinkedList<K> {
 		node.next = n.next;
 		n.next = node;
 	}
+	
+	/**
+	 * This method is used to delete the first element
+	 */
+	public void pop()
+	{
+		head = head.next;
+	}
 
 	/**
 	 * This method is used to display the data
