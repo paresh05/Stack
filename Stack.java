@@ -16,6 +16,22 @@ public class Stack<K> {
 	}
 	
 	/**
+	 * This method is used to fetch the data of the last element inserted
+	 */
+	public void peek()
+	{
+		System.out.println(list.peak());
+	}
+
+	/**
+	 * This method is used to remove the element from the stack
+	 */
+	public void pop()
+	{
+		list.popAllElements();
+	}
+	
+	/**
 	 * This method is used to display the data using the show method of linked ist
 	 */
 	public void show()

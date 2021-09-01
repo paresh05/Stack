@@ -1,6 +1,7 @@
 package com.bridgelabzd17;
 
-public class LinkedList<K> {
+public class LinkedList<K> 
+{
 	Node<K> head;
 
 	/**
@@ -8,7 +9,8 @@ public class LinkedList<K> {
 	 * 
 	 * @param data This is the value of the data
 	 */
-	public void insert(K data) {
+	public void insert(K data) 
+	{
 		Node<K> node = new Node<>(data);
 		node.data = data;
 		node.next = null;
@@ -27,7 +29,8 @@ public class LinkedList<K> {
 	/**
 	 * This method is used to insert the data at the start
 	 */
-	public void insertAtStart(K data) {
+	public void insertAtStart(K data) 
+	{
 		Node<K> node = new Node<>(data);
 		node.data = data;
 		node.next = null;
@@ -38,7 +41,8 @@ public class LinkedList<K> {
 	/**
 	 * This method is used to insert the data in between
 	 */
-	public void insertAtBetween(int index,K data) {
+	public void insertAtBetween(int index,K data) 
+	{
 		Node<K> node = new Node<>(data);
 		node.data = data;
 		node.next = null;
@@ -78,11 +82,32 @@ public class LinkedList<K> {
 		}
 		n.next = null;
 	}
+	
+	/**
+	 * This method is used to delete all the elements of the linked list
+	 */
+	public void popAllElements()
+	{
+		while(head!=null)
+		{
+			System.out.println("Removed the element: "+head.data);
+			head=head.next;
+		}
+	}
+	
+	/**
+	 * This method is returns the data present in the head element
+	 */
+	public K peak()
+	{
+		return head.data;
+	}
 
 	/**
 	 * This method is used to display the data
 	 */
-	public void show() {
+	public void show() 
+	{
 		Node<K> n = head;
 
 		while (n.next != null) {
