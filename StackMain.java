@@ -2,7 +2,7 @@ package com.bridgelabzd17;
 
 public class StackMain {
 	/**
-	 *  This is the main method which makes use of push method to push the elements to stack and show method to display the elements
+	 *  This is the main method which makes use of push method to push the elements to stack and show method to display the data
 	 */
 	public static void main(String[] args) {
 		
