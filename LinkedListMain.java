@@ -4,7 +4,6 @@ public class LinkedListMain {
 
 	/**
 	 *  This is the main method which makes use of insert and show method
-	 * @param args Unused
 	 */
 	public static void main(String[] args) 
 	{
