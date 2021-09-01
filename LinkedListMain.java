@@ -9,9 +9,9 @@ public class LinkedListMain {
 	{
 		LinkedList<Integer> list = new LinkedList<>();
 		
-		list.insert(56);
-		list.insert(30);
 		list.insert(70);
+		list.insertAtStart(30);
+		list.insertAtStart(56);
 		
 		list.show();
 		

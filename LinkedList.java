@@ -1,9 +1,9 @@
 package com.bridgelabzd17;
 
-
 public class LinkedList<K>
 {
 	Node<K> head;
+	
 	/**
 	 * This method is used to insert the data
 	 * @param data This is the value of the data
@@ -28,6 +28,20 @@ public class LinkedList<K>
 			n.next = node;
 		}
 	}
+	
+	
+	/**
+	 * This method is used to insert the data at the start
+	 */
+	public void insertAtStart(K data)
+	{
+		Node<K> node =new Node<>(data);
+		node.data = data;
+		node.next = null;
+		node.next = head;
+		head = node;
+	}
+	
 	
 	/**
 	 * This method is used to display the data
