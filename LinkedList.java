@@ -66,6 +66,20 @@ public class LinkedList<K> {
 	}
 
 	/**
+	 * This method is used to delete the last element
+	 */
+	public void popLastElement()
+	{
+		Node<K> n = head;
+		
+		while(n.next.next!=null)
+		{
+			n = n.next;
+		}
+		n.next = null;
+	}
+
+	/**
 	 * This method is used to display the data
 	 */
 	public void show() {

@@ -13,7 +13,7 @@ public class LinkedListMain {
 		list.insert(30);
 		list.insert(70);
 		
-		list.pop();
+		list.popLastElement();
 		
 		list.show();
 	}
