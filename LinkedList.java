@@ -86,7 +86,7 @@ public class LinkedList<K> {
 		Node<K> n = head;
 
 		while (n.next != null) {
-			System.out.println(n.data);
+			System.out.print(n.data+" -> ");
 			n = n.next;
 		}
 		System.out.println(n.data);
